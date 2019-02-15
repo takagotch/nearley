@@ -10,17 +10,15 @@ nearleyc grammar.ne -o grammar.js
 ```
 
 ```js
-const nearley = require();
-const grammar = require();
+const nearley = require("nearley");
+const grammar = require("./grammar.js");
 const parser = new nearley.Parser(nearley.Grammar.fromCompiled(grammar));
-parser.feed();
-console.log();
-
-
-
+parser.feed("foo\n");
+console.log(parser.results);
 ```
 
 ```
+
 ```
 
 
